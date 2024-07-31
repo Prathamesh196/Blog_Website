@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a simple blog website built using HTML, CSS, and JavaScript. It features a navigation bar, a section for displaying blog posts, and a footer. The website is responsive and adapts to different screen sizes.
+This is  blog website built using HTML, CSS, and JavaScript. It features a navigation bar, a section for displaying blog posts, and a footer. The website is responsive and adapts to different screen sizes.
 
 ## Features
 
