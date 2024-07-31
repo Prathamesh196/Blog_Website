@@ -49,9 +49,4 @@ This is a simple blog website built using HTML, CSS, and JavaScript. It features
 - Uses Open Sans as the primary font.
 - Included using the Google Fonts API.
 
-## Getting Started
 
-1. **Clone the Repository**
-
-   ```bash
-   git clone https://github.com/yourusername/your-repository.git
