@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+   
+    <script src="https://kit.fontawesome.com/30a85ac1ff.js" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="#" class="logo">Prathamesh<span>Gawali</span></a>
+            <a href="#" class="login">Sign Up</a>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-text container">
+            <h2 class="home-title">Blog Website</h2>
+            <span class="home-subtitle">Your content goes</span>
+        </div>
+    </section>
+
+    <section class="about container" id="about">
+        <div class="contentBx">
+            <h2 class="titleText">Catch up with the trending topics</h2>
+            <p class="title-text">
+                Stay ahead of the curve with our "Trending Topics" section! Here, we bring you the latest  buzz from around the world. <br><br>From viral news and social media sensations to groundbreaking innovations and cultural shifts, we've got it all covered. Dive into insightful articles, engaging discussions, and thought-provoking analyses that keep you informed and entertained. <br> <br> Whether it's the newest fashion trends, tech advancements, health tips, or pop culture phenomena, our curated content ensures you never miss out on what's
+                 hot and happening. Join the conversation and stay connected with 
+                 the trends shaping our world today!
+            </p>
+            <a href="#" class="btn2">Read more</a>
+        </div>
+        <div class="imgBx">
+            <img src="images/news.jpg" alt="" class="fitBg">
+        </div>
+    </section>
+
+    <div class="post-filter container">
+        <span class="filter-item active-filter" data-filter="all">All</span>
+        <span class="filter-item" data-filter="tech">Tech</span>
+        <span class="filter-item" data-filter="food">Food</span>
+        <span class="filter-item" data-filter="news">Travel</span>
+    </div>
+    
+    <div class="post container">
+        <!-- Post 1 -->
+        <div class="post-box tech">
+         <a href="#blog1"> <img src="images/tech2.jpg" alt="" class="post-img" onclick="showBlog('blog1')"  > </a>
+            <h2 class="category">Tech</h2>
+            <a href="#blog1" class="post-title" >Healthcare startup Doceree raises $13.6 million in funding from Creaegis</a>
+            <span class="post-date">1 Feb 2022</span>
+            <p class="post-description">Healthcare startup Doceree has raised Rs 113.5 crore or approximately $13.6 million as part of its Series B funding round from Indian private equity firm Creaegis. 
+                The board at Doceree has passed a special resolution to issue 10 equity and 2,4300 CCPS at an issue price of Rs 4,672 per share to raise Rs 113.5 crore,
+                 Entrackr reported, citing the company's regulatory filing accessed from the Registrar of Companies.</p>
+            <div class="profile">
+                <img src="images/testi1.jpg" alt="" class="profile-img">
+                <span class="profile-name">MKHB</span>
+                
+            </div>
+          <a href="#blog1"  ><button class="read-more" onclick="showBlog('blog1')">Read More</button></a>
+        </div>
+        <!-- Post 2 -->
+        <div class="post-box food">
+            <img src="https://c.ndtvimg.com/2023-08/2u2kdsro_orange-peel_625x300_23_August_23.jpg?im=FaceCrop,algorithm=dnn,width=620,height=350" alt="" class="post-img">
+            <h2 class="category">Food</h2>
+            <a href="#" class="post-title">Study Says Adding Orange Peels To Your Diet Could Improve Heart Health, Should You Eat Them?</a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Orange peels, often dumped in the trash, are loaded with nutrients that can benefit your heart health, according to new research.</p>
+            <div class="profile">
+                <img src="images/testi1.jpg" alt="" class="profile-img">
+                <span class="profile-name">MKHB</span>
+            </div>
+            <a href="#blog7"  ><button class="read-more" onclick="showBlog('blog7')">Read More</button></a>
+        </div>
+        <!-- Post 3 -->
+        <div class="post-box food">
+            <img src="https://www.usatoday.com/gcdn/authoring/authoring-images/2024/05/14/USAT/73691323007-cb-melts-1920-x-1080-v-1-logo.jpg?width=660&height=372&fit=crop&format=pjpg&auto=webp" alt="" class="post-img">
+            <h2 class="category">Food</h2>
+            <a href="#" class="post-title">Pizza Hut newest dish: A cheeseburger patty melt made with pizza crust and mozzarella</a>
+            <span class="post-date">21 Feb 2022</span>
+            <p class="post-description">The pizza chain is now offering a new limited-time Cheeseburger Melt, made with all the fixings of a bacon cheeseburger – beef, bacon, onions, cheddar cheese and, a pizza touch: mozzarella cheese – folded between two parmesan-crusted thin pizza crusts. It comes with a dipping sauce, too.</p>
+            <div class="profile">
+                <img src="images/testi1.jpg" alt="" class="profile-img">
+                <span class="profile-name">MKHB</span>
+            </div>
+            <a href="#blog4"  ><button class="read-more" onclick="showBlog('blog4')">Read More</button></a>
+        </div>
+        <!-- Post 4 -->
+        <div class="post-box news">
+            <img src="images/taj.jpg" alt="" class="post-img">
+            <h2 class="category">Travel</h2>
+            <a href="#" class="post-title">Indian Supreme Court Orders Government to Restore the Taj Mahal — or Demolish It</a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">After the government failed to file plans for restoring the monument, which is discolored by bug poo and pollution, the court has demanded action</p>
+            <div class="profile">
+                <img src="images/testi1.jpg" alt="" class="profile-img">
+                <span class="profile-name">MKHB</span>
+               
+            </div>
+            <a href="#blog6"  ><button class="read-more" onclick="showBlog('blog6')">Read More</button></a>
+        </div>
+
+
+        <!-- Post 5 -->
+
+        <div class="post-box tech">
+            <a href="#blog2"> <img src="images/tech.jpg" alt="" class="post-img" onclick="showBlog('blog2')"  > </a>
+            <h2 class="category">Tech</h2>
+            <a href="#" class="post-title">Gupshup launches India's first conversational buyer app on the govt-backed ONDC</a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Gupshup, the world's leading Conversation Cloud, has launched what it claims to be India's first Conversational Buyer App on the Open Network for Digital Commerce (ONDC).
+
+                The announcement was made at the Conversations 2024 event in Delhi.</p>
+            <div class="profile">
+                <img src="images/testi1.jpg" alt="" class="profile-img">
+                <span class="profile-name">MKHB</span>
+            </div>
+            <a href="#blog2"  ><button class="read-more" onclick="showBlog('blog2')">Read More</button></a>
+        </div>
+        <!-- Post 6 -->
+        <div class="post-box news">
+            <img src="https://media.cnn.com/api/v1/images/stellar/prod/230609151446-05-india-outbound-tourism-passport-restricted.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp" alt="" class="post-img">
+            <h2 class="category">Travel</h2>
+            <a href="#" class="post-title">India is now the most populous country in the world. And it’s ready to become a tourism force
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">All eyes now are on the South Asian superpower’s growing influence on the global stage. And the tourism industry is no exception.</p>
+            <div class="profile">
+                <img src="images/testi1.jpg" alt="" class="profile-img">
+                <span class="profile-name">MKHB</span>
+            </div>
+            <a href="#blog8"  ><button class="read-more" onclick="showBlog('blog8')">Read More</button></a>
+        </div>
+        <!-- Post 7 -->
+        <div class="post-box tech">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.4muLstRSEJf26-8V4wcMHwHaEc&pid=Api&P=0&h=220" alt="" class="post-img">
+            <h2 class="category">Tech</h2>
+            <a href="#" class="post-title">Razorpay to offer international payments to freelancers with its MoneySaver Export Account</a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Razorpay, a leading omnichannel payments and banking platform for businesses in India, has announced the expansion of its MoneySaver Export Account specifically for freelancer professionals.
+
+                The development marks Razorpay as the first Indian Payment Aggregator (PA) to offer international payments for freelancers.</p>
+            <div class="profile">
+                <img src="images/testi1.jpg" alt="" class="profile-img">
+                <span class="profile-name">MKHB</span>
+            </div>
+            <a href="#blog3"  ><button class="read-more" onclick="showBlog('blog3')">Read More</button></a>
+        </div>
+        <!-- Post 1 -->
+        <div class="post-box news">
+            <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202406/archana-makwana-223759553-16x9_0.jpg?VersionId=dhUATwUCHofP1oHO9QQpUBdrDM.crmDk&size=690:388" alt="" class="post-img">
+            <h2 class="category">Travel</h2>
+            <a href="#" class="post-title">Woman's yoga at Golden Temple draws gurdwara panel's ire, complaint filed</a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">The woman apologised for her act and removed the photos and videos from her Instagram account. She claimed that she was receiving death threats.</p>
+            <div class="profile">
+                <img src="images/testi1.jpg" alt="" class="profile-img">
+                <span class="profile-name">MKHB</span>
+            </div>
+            <a href="#blog9"  ><button class="read-more" onclick="showBlog('blog9')">Read More</button></a>
+        </div>
+        <!-- Post 9 -->
+        <div class="post-box food">
+            <img src="https://indianfoodtimes.com/uploads/images/202404/image_750x_661a47750ed2f.jpg" alt="" class="post-img">
+            <h2 class="category">Food</h2>
+            <a href="#" class="post-title">E-commerce Platforms Must Remove "Health Drink" Label from Beverages like Bournvita</a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">E-commerce platforms in India must remove "health drink" labels from beverages like Bournvita. The government is taking action to ensure accurate labeling and prevent misleading information for consumers.</p>
+            <div class="profile">
+                <img src="images/testi1.jpg" alt="" class="profile-img">
+                <span class="profile-name">MKHB</span>
+            </div>
+            <a href="#blog5"  ><button class="read-more" onclick="showBlog('blog5')">Read More</button></a>
+        </div>
+        
+    </div>
+
+
+    <div id="blog1" class="blog-post" >
+        <section class="about container" id="about">
+            <div class="contentBx">
+                <h2 class="titleText">Healthcare startup Doceree raises $13.6 million in funding from Creaegis</h2>
+                <p class="title-text">
+                    Healthcare startup Doceree has raised Rs 113.5 crore or approximately $13.6 million as part of its Series B funding round from Indian private equity firm Creaegis. 
+
+The board at Doceree has passed a special resolution to issue 10 equity and 2,4300 CCPS at an issue price of Rs 4,672 per share to raise Rs 113.5 crore, Entrackr reported, citing the company's regulatory filing accessed from the Registrar of Companies.
+
+The latest investment brings Doceree's all-time raise to over $50 million. This includes $35 million from its Series B round, which was also led by Creaegis.
+
+In 2022, the startup raised $11 million in a Series A round spearheaded by Eight Road Ventures.
+
+
+                </p>
+                <a href="#" class="btn2">Read more</a>
+            </div>
+            <div class="imgBx">
+                <img src="images/tech2.jpg" alt="" class="fitBg">
+            </div>
+        </section>
+        <div class="comment-section">
+            <textarea id="comment1" placeholder="Add a comment..."></textarea>
+            <button onclick="submitComment('comment1')">Submit</button>
+        </div>
+    </div>
+
+
+
+    <div id="blog2" class="blog-post" >
+        <section class="about container" id="about">
+            <div class="contentBx">
+                <h2 class="titleText">Gupshup launches India's first conversational buyer app on the govt-backed ONDC</h2>
+                <p class="title-text">
+                    Gupshup, the world's leading Conversation Cloud, has launched what it claims to be India's first Conversational Buyer App on the Open Network for Digital Commerce (ONDC).
+<br> <br>
+                    The announcement was made at the Conversations 2024 event in Delhi. The app allows buyers to use a WhatsApp-based conversational interface to discover, browse, and purchase products from sellers on the ONDC network without the need to download any additional mobile applications.
+                    <br> <br>
+                    What does the app offer?
+                    The app enables users to share their location over chat, browse sellers nearby, order food, and make payments directly through WhatsApp.
+                    
+                    Initially, the app is in Beta and offers limited availability, primarily for ordering food and beverages such as biryani. According to Gupshup, support for additional conversational channels like Google RCS and Voice will be added soon.
+
+
+                </p>
+                <a href="#" class="btn2">Read more</a>
+            </div>
+            <div class="imgBx">
+                <img src="images/tech.jpg" alt="" class="fitBg">
+            </div>
+        </section>
+        <div class="comment-section">
+            <textarea id="comment1" placeholder="Add a comment..."></textarea>
+            <button onclick="submitComment('comment1')">Submit</button>
+        </div>
+    </div>
+
+
+
+
+    <div id="blog3" class="blog-post" >
+        <section class="about container" id="about">
+            <div class="contentBx">
+                <h2 class="titleText">Razorpay to offer international payments to freelancers with its MoneySaver Export Account</h2>
+                <p class="title-text">
+                    Razorpay, a leading omnichannel payments and banking platform for businesses in India, has announced the expansion of its MoneySaver Export Account specifically for freelancer professionals.
+
+The development marks Razorpay as the first Indian Payment Aggregator (PA) to offer international payments for freelancers.
+
+The new feature allows freelancers to open a smart account in any country of their choice and accept payments locally via bank transfers on the Razorpay platform with zero withdrawal fees.
+<br> <br>
+Aiming to empower 1.5 crore freelancers
+Razorpay’s MoneySaver Export Account aims to empower over 15 million Indian freelancers by saving them up to 50% in fees and commissions on international bank transfers.
+
+Traditionally, international payments for freelancers have been costly and cumbersome, with fees reaching up to $30 per transaction and additional currency conversion charges. This often results in freelancers losing up to 25% of their income.
+
+The MoneySaver Export Account addresses these issues by enabling freelancers to receive international bank transfers from over 160 countries within five seconds, eliminating the need for additional paperwork and reducing costs significantly.
+
+
+                </p>
+                <a href="#" class="btn2">Read more</a>
+            </div>
+            <div class="imgBx">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.4muLstRSEJf26-8V4wcMHwHaEc&pid=Api&P=0&h=220" alt="" class="fitBg">
+            </div>
+        </section>
+        <div class="comment-section">
+            <textarea id="comment1" placeholder="Add a comment..."></textarea>
+            <button onclick="submitComment('comment1')">Submit</button>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="blog4" class="blog-post" >
+        <section class="about container" id="about">
+            <div class="contentBx">
+                <h2 class="titleText">Pizza Hut newest dish: A cheeseburger patty melt made with pizza crust and mozzarella</h2>
+                <p class="title-text">
+                    Pizza Hut wants to out-burger the kings of burgers.
+
+                    The pizza chain is now offering a new limited-time Cheeseburger Melt, made with all the fixings of a bacon cheeseburger – beef, bacon, onions, cheddar cheese and, a pizza touch: mozzarella cheese – folded between two parmesan-crusted thin pizza crusts. It comes with a dipping sauce, too.
+                    
+                    "Unlike a traditional cheeseburger, the Cheeseburger Melt dips perfectly into what we would argue is the world's best burger dipping sauce," said Pizza Hut's chief innovation officer Rachel Antalek in a news release. "We challenge you to find a better burger and sauce experience."
+                    
+                    Red Lobster:Restaurant chain's website lists 87 locations 'temporarily closed' in 27 states: See full list
+                    
+                    Pizza Hut has a new limited-time menu item, the Cheeseburger Melt, a parmesan-crusted thin crust packed with beef, applewood-smoked bacon, onions, mozzarella, and cheddar, served with Burger Sauce on the side.
+                    The pizza maker is tweaking its fast food competition by deploying delivery drivers in red SUVs in Miami and Chicago sporting pictures of the new Cheeseburger Melt, the slogan "Want a Better Burger?" and a scannable QR code for a chance to win a free one. Chicago is where McDonald's is headquartered, and Miami, home of Burger King (the chain has been owned by Toronto-based Restaurant Brands International since 2014).
+
+
+                </p>
+                <a href="#" class="btn2">Read more</a>
+            </div>
+            <div class="imgBx">
+                <img src="https://www.usatoday.com/gcdn/authoring/authoring-images/2024/05/14/USAT/73691323007-cb-melts-1920-x-1080-v-1-logo.jpg?width=660&height=372&fit=crop&format=pjpg&auto=webp" alt="" class="fitBg">
+            </div>
+        </section>
+        <div class="comment-section">
+            <textarea id="comment1" placeholder="Add a comment..."></textarea>
+            <button onclick="submitComment('comment1')">Submit</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div id="blog5" class="blog-post" >
+        <section class="about container" id="about">
+            <div class="contentBx">
+                <h2 class="titleText">E-commerce Platforms Must Remove "Health Drink" Label from Beverages like Bournvita</h2>
+                <p class="title-text">
+                    E-commerce Platforms Must Remove "Health Drink" Label from Beverages like Bournvita
+                    E-commerce platforms in India must remove "health drink" labels from beverages like Bournvita. The government is taking action to ensure accurate labeling and prevent misleading information for consumers.
+                     Facebook  Twitter      
+                    E-commerce Platforms Must Remove "Health Drink" Label from Beverages like Bournvita
+                    The Indian government has directed e-commerce companies to remove all drinks and beverages, including Bournvita, from the "health drinks" category on their websites. This action follows an inquiry by the National Commission for Protection of Child Rights (NCPCR) which found that the term "health drink" is not defined under food safety regulations in India.
+                    
+                    Previously, the Food Safety and Standards Authority of India (FSSAI) had also advised e-commerce platforms to ensure proper categorization of food products. The FSSAI noted that certain beverages licensed as "proprietary foods" were being misleadingly sold under the "health drink" or "energy drink" labels on e-commerce websites.
+                    
+                    
+                    The FSSAI clarified that "health drink" is not a standardized term and advised e-commerce platforms to recategorize these beverages appropriately. This move aims to improve transparency for consumers and prevent them from being misled by inaccurate labeling.
+
+                </p>
+                <a href="#" class="btn2">Read more</a>
+            </div>
+            <div class="imgBx">
+                <img src="https://indianfoodtimes.com/uploads/images/202404/image_750x_661a47750ed2f.jpg" alt="" class="fitBg">
+            </div>
+        </section>
+        <div class="comment-section">
+            <textarea id="comment1" placeholder="Add a comment..."></textarea>
+            <button onclick="submitComment('comment1')">Submit</button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="blog6" class="blog-post" >
+        <section class="about container" id="about">
+            <div class="contentBx">
+                <h2 class="titleText">Indian Supreme Court Orders Government to Restore the Taj Mahal — or Demolish It
+                </h2>
+                <p class="title-text">
+                    For almost 400 years, the Taj Mahal, just south of the Indian city of Agra, has stood as a gleaming white monument to love; the iconic mausoleum was built at the command of Mughal emperor Shah Jahan to commemorate his favorite wife, Mumtaz Mahal who died during childbirth. 
+                    <br> <br>But lately the tomb has lost some of its shine—bug poop and industrial pollution have begun to turn its white marble green, black, brown and yellow, and state caretakers have struggled to keep the building clean. Now, reports Gareth Harris at The Art Newspaper, the Supreme Court of India has handed down an ultimatum—“Either you demolish [the Taj Mahal] or you restore it.”
+
+The BBC reports this is not the first time the court has weighed in on the state of the Taj. In May, the court instructed the state of Uttar Pradesh, where the Unesco World Heritage Site is located, to seek out foreign experts to help stop the “worrying change in color” of the monument since it appeared state experts were unable or unwilling to save the monument.<br><br> Since that order, however, the federal and state governments had not filed any sort of action plan or follow-up, prompting the court to accuse them of “lethargy” and to issue the hyperbolic mandate that they might as well demolish the site if they weren’t going to take care of it.
+
+                </p>
+                <a href="#" class="btn2">Read more</a>
+            </div>
+            <div class="imgBx">
+                <img src="images/taj.jpg" alt="" class="fitBg">
+            </div>
+        </section>
+        <div class="comment-section">
+            <textarea id="comment1" placeholder="Add a comment..."></textarea>
+            <button onclick="submitComment('comment1')">Submit</button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="blog7" class="blog-post" >
+        <section class="about container" id="about">
+            <div class="contentBx">
+                <h2 class="titleText">Study Says Adding Orange Peels To Your Diet Could Improve Heart Health, Should You Eat Them?
+                </h2>
+                <p class="title-text">
+                    Oranges are fragrant and juicy with a flavour that is a mix of both sweet and tangy. <br>People who enjoy eating this fruit cannot wait to rip off the peel and bite into the juicy goodness of oranges. Many people also enjoy drinking orange juice regularly, whether it is freshly squeezed or packaged. Wait, before you discard those orange peels into the trash, we have some news for you.<br> <br> Did you know that these seemingly 'waste' orange peels are nutritious - packed with fibre, vitamin C, and polyphenols?
+                    According to Healthline, studies have found that just 1 tablespoon of orange peel provides 14% of the Daily Value (DV) of vitamin C - nearly 3 times more than the inner fruit.
+                </p>
+                <a href="#" class="btn2">Read more</a>
+            </div>
+            <div class="imgBx">
+                <img src="https://c.ndtvimg.com/2023-08/2u2kdsro_orange-peel_625x300_23_August_23.jpg?im=FaceCrop,algorithm=dnn,width=620,height=350" alt="" class="fitBg">
+            </div>
+        </section>
+        <div class="comment-section">
+            <textarea id="comment1" placeholder="Add a comment..."></textarea>
+            <button onclick="submitComment('comment1')">Submit</button>
+        </div>
+    </div>
+
+
+
+
+    <div id="blog8" class="blog-post" >
+        <section class="about container" id="about">
+            <div class="contentBx">
+                <h2 class="titleText">India is now the most populous country in the world. And it’s ready to become a tourism force
+
+                </h2>
+                <p class="title-text">
+                    By 2024, Indians are expected to spend more than $42 billion per year on outbound travel, according to recent reports.
+
+India is experiencing what Omri Morgenshtern, CEO of travel and bookings website Agoda, calls a tourism “boom,” and is currently “the biggest growing outbound destination.”
+<br> <br>
+While the total number of travelers coming from some other countries is higher, no nation’s tourism sector is growing as fast as India’s, he adds.
+<br> <br>
+It isn’t just about the number of people traveling, either. The country is continuing to pour billions of dollars into growing its aviation industry and cementing its status as a travel hub.
+                </p>
+                <a href="#" class="btn2">Read more</a>
+            </div>
+            <div class="imgBx">
+                <img src="https://media.cnn.com/api/v1/images/stellar/prod/230609151446-05-india-outbound-tourism-passport-restricted.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp" alt="" class="fitBg">
+            </div>
+        </section>
+        <div class="comment-section">
+            <textarea id="comment1" placeholder="Add a comment..."></textarea>
+            <button onclick="submitComment('comment1')">Submit</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="blog9" class="blog-post" >
+        <section class="about container" id="about">
+            <div class="contentBx">
+                <h2 class="titleText">Woman's yoga at Golden Temple draws gurdwara panel's ire, complaint filed
+
+
+                </h2>
+                <p class="title-text">
+                    The Shiromani Gurdwara Parbandhak Committee (SGPC) has filed a police complaint against a woman for performing yoga inside the premises of Amritsar's Golden Temple. The SGPC has also dismissed three of its employees from their jobs for negligence in duty and fined Rs 5,000 each.
+
+                    <br> <br>
+                    The woman, Archana Makwana, is a practitioner of yoga. She came to Delhi on June 21, observed as International Yoga Day, to receive an award and also performed asanas on the premises of the Golden Temple.
+                </p>
+                <a href="#" class="btn2">Read more</a>
+            </div>
+            <div class="imgBx">
+                <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202406/archana-makwana-223759553-16x9_0.jpg?VersionId=dhUATwUCHofP1oHO9QQpUBdrDM.crmDk&size=690:388" alt="" class="fitBg">
+            </div>
+        </section>
+        <div class="comment-section">
+            <textarea id="comment1" placeholder="Add a comment..."></textarea>
+            <button onclick="submitComment('comment1')">Submit</button>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+
+
+ 
+    <script>
+        function showBlog(blogId) {
+            // Hide all blog posts
+            var blogs = document.getElementsByClassName('blog-post');
+            for (var i = 0; i < blogs.length; i++) {
+                blogs[i].classList.remove('active');
+            }
+            // Show the selected blog post
+            document.getElementById(blogId).classList.add('active');
+        }
+
+        function submitComment(commentId) {
+            var comment = document.getElementById(commentId).value;
+            alert("Comment submitted: " + comment);
+            // Here you can add your code to save the comment, e.g., send it to a server
+            document.getElementById(commentId).value = ''; // Clear the textarea
+        }
+    </script>
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p> Our mission is to bring you the latest trends, tips, and stories from around the world. Whether you're looking for expert advice, creative ideas, or just a good read, we've got you covered. Join us on this journey and let's explore together!</p>
+                <ul class="sci">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://x.com/prathamesh_210"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/prathamesh195/"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            <div class="sec contactBx">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class='bx bxs-map'></i></span>
+                        <span>6444 London street <br> Brighton PA 33445 <br> Uk</span>
+                    </li>
+                    <li>
+                        <span><i class='bx bx-envelope' ></i></span>
+                        <p><a href="mailto:codemyhobby9@gmail.com">Codemyhobby9@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+
+
+
+
+</body>
+</html>
